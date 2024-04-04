@@ -1,0 +1,20 @@
+
+package BufferedReader;
+import java.io.*;
+
+public class LatBuffered {
+   public static void main (String args[]) throws Exception
+   {
+       // Membuat Objek Baru
+       InputStreamReader keyreader = new InputStreamReader (System.in);
+       BufferedReader input = new BufferedReader(keyreader);
+       // Deklarasi Variable
+       String kata1, kata2;
+       
+       System.out.println("Masukkan Kata Pertama : ");
+       kata1 = input.readLine ();
+       System.out.println("Masukkan Kata Kedua : ");
+       kata2 = input.readLine() ; 
+       System.out.println("\nHasil input string : "+ kata1 + "" + kata2);
+   }
+}
